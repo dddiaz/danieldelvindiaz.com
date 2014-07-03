@@ -1,9 +1,20 @@
 <!--Sidebar Element -->
 <link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/polymer-ui-sidebar-header/polymer-ui-sidebar-header.html">
+<link rel="import" href="/bower_components/polymer-ui-menu/polymer-ui-menu.html">
+<link rel="import" href="/bower_components/polymer-ui-nav-arrow/polymer-ui-nav-arrow.html">
+<link rel="import" href="/bower_components/polymer-flex-layout/polymer-flex-layout.html">
 
-<polymer-element name="my-sidebar" noscript>
+<polymer-element name="my-sidebar" extends="polymer-ui-menu" attributes="label" noscript>
   <template>
   	<link rel="stylesheet" href="my-sidebar.css">
-    <p>Sidebar Text</p>
+    <polymer-flex-layout vertical></polymer-flex-layout>
+    <polymer-ui-sidebar-header label="{{label}}">
+      <content select="[logo]"></content>
+    </polymer-ui-sidebar-header>
+    <div class="sidebar-menu" flex>
+      <shadow></shadow>
+      <polymer-ui-nav-arrow target="{{selectedItem}}"></polymer-ui-nav-arrow>
+    </div>
   </template>
 </polymer-element>
