@@ -1,0 +1,12 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+my-sidebar {
+  width: 240 px;
+  height: 100%;
+}
