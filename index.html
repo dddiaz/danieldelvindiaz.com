@@ -8,7 +8,7 @@
     <!--Shortcut Icon-->
 		<link rel="shortcut icon" href="favicon.png">
     <!--jQ-->
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
     <!--Styles-->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="bower_components/ionicons/css/ionicons.min.css">
     <!--JS-->
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--BackStretch -->
+    <script src="bower_components/jquery-backstretch/jquery.backstretch.min.js"></script>
+    
   </head>
   <body>
 
@@ -34,20 +37,49 @@
         <nav id="nav" class="navigation" role="navigation">
 					<ul class="unstyled">
 						<li class="active" data-section="1"><i class="icon ion-home"></i> <span>Home</span></li>
-						<li data-section="2" class=""><i class="icon-user"></i> <span>About</span></li>
-						<li data-section="3" class=""><i class="icon-laptop"></i> <span>Engineering</span></li>
-						<li data-section="4" class=""><i class="icon-pencil"></i> <span>Projects</span></li>
-						<li data-section="5" class=""><i class="icon-picture"></i> <span>Photography</span></li>
-						<li data-section="6" class="last"><i class="icon-envelope"></i> <span>Contact</span></li>
+						<li data-section="2" class=""><i class="icon ion-home"></i> <span>About</span></li>
+						<li data-section="3" class=""><i class="icon ion-home"></i> <span>Engineering</span></li>
+						<li data-section="4" class=""><i class="icon ion-home"></i> <span>Projects</span></li>
+            <!--Dont forget to include snapmap and sites you have worked on -->
+            <li data-section="6" class=""><i class="icon ion-home"></i> <span>This Site</span></li>
+						<li data-section="7" class=""><i class="icon ion-home"></i> <span>Photography</span></li>
+						<li data-section="8" class="last"><i class="icon ion-home"></i> <span>Contact</span></li>
 					</ul>
 				</nav><!-- /nav -->
-      </div>
+      </div> <!-- /Sidebar -->
+
+      <div><!--Content-->
+
+        <section class="section" id="section1" data-section="1">
+          <div class="container-fluid"> 
+            <div class="row-fluid">
+              
+              <div class="alt-image img-circle thumb">
+                <!--TODO ADD IMG SOURCE/to the css as well? -->
+                <img src="assets/img/dddiaz-thumb.jpg" alt="Daniel Diaz" class="img-circle">
+              </div>
+              <div class="span6 intro">
+                <hgroup>
+                  <h1>Hello There!</h1>
+                  <h3>My name is Daniel Diaz and I am a Software Engineer living in SoCal.</h3>
+                </hgroup>
+                <button class="btn-inverse" data-section="2">
+                  Learn <span>More</span>
+                  <i class="icon-circle-arrow-down"></i>
+                </button>
+              </div><!-- /span6 -->
+              
+            </div><!-- /row-fluid -->
+          </div><!-- /container-fluid --> 
+        </section><!-- /section 1-->
+
+      </div><!--/Content-->
     <div>
 
-    <!--<h1> Daniel Diaz </p>-->
+
 
 		<!-- GA CODE -->
-		<script>
+		<!--<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -55,7 +87,7 @@
 
 			ga('create', 'UA-52142505-1', 'danieldelvindiaz.com');
 			ga('send', 'pageview');
-		</script>
+		</script>-->
 
   </body>
 
