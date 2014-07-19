@@ -4,6 +4,13 @@ $(document).ready(function ($) {
     
     $('.btn-navbar').click( function() {
 	    $('html').toggleClass('expanded');
+	    $('#nav-text-span1').toggleClass('hidden');
+	    $('#nav-text-span2').toggleClass('hidden');
+	    $('#nav-text-span3').toggleClass('hidden');
+	    $('#nav-text-span4').toggleClass('hidden');
+	    $('#nav-text-span5').toggleClass('hidden');
+	    $('#nav-text-span6').toggleClass('hidden');
+	    $('#nav-text-span7').toggleClass('hidden');
     });
     
     
