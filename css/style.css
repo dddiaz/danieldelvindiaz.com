@@ -766,7 +766,8 @@
 			#main > section.one
 			{
 				background-color: #81918E;
-				background-image: url('../images/header-bg.jpg');
+				/**background-image: url('../images/header-bg.jpg');**/
+				background-image: url('../images/header-bg-compressed.jpg');
 			}
 
 			#main > section.two
