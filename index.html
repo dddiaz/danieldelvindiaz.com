@@ -58,7 +58,7 @@
 								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
 								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
 								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#prometheus" id="prometheus-link" class="skel-layers-ignoreHref"><span class="icon fa-rocket">Prometheus</span></a></li>
+								<li><a href="#bg-stats" id="bg-stats-link" class="skel-layers-ignoreHref"><span class="icon fa-rocket">BG Stats</span></a></li>
 								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -187,23 +187,21 @@
 					</section>
 
 				<!-- Portfolio -->
-					<section id="prometheus" class="three">
+					<section id="bg-stats" class="three">
 						<div class="container">
 
 							<header>
-								<h2>Project Prometheus</h2>
+								<h2>Blood Glucose Stats</h2>
 							</header>
 
 							<div class="row">
-								<div class = "containter 6u">
-									<div class=""><img src="images/amazon.png" class="image fit centered"></img></div>
-									<div class=""><img src="images/raspberrypi.png" class="image fit centered"></img></div>
+								<div class = "containter 4u">
+									<img src="images/blood-drop.png" class="image fit centered"></img>
 								</div>
-								<p class="6u">Project Prometheus is centered around the incredible Raspberry Pi 2. The idea consists of a plug and play device that can automatically back up connected drives to Amazon Web Services such as Amazon Glacier and Amazon S3. Allowing the speed and size of onsite storage, with the assurance of an off-site back-up.</p>
-								<p class="6u">Sponsored by WDLabs, the project is in its inital stages.</p>
-								<p class="6u">Updates: Raspberry Pi set up with raspbian and ssh. Auto mounted USB configured. AWSCLI Installed.</p>
-								<p class="6u">To find out more information about this project, check out the github.</p>
-								<p class= "6u"><a class="button" href="https://github.com/dddiaz/Prometheus">Project Prometheus</a><p>
+								<p class="8u">BG-Stats is a series of APIs hosted on AWS Lambda and API Gateway that allow for a "Serverless Backend" that can serve stats about my Blood Glucose. Written with Node, I leveraged AWS Lambda so that my api can scale easily, be developed quickly, and require no server administration.</p>
+								<p class="8u">Blood Glucose is a measurement used by Type 1 Diabetics to determine the amount of glucose in the blood, and it helps indicate certain treatment options. With these stats, I am hoping to give myself and others extra insight into their Blood Glucose Readings.</p>
+								<p class="12u">To find out more information about this project, check out the <a class="" href="https://github.com/dddiaz/BG-Stats-API">BG Stats API Github</a>.</p>
+								<p class= "12u"><a class="button" href="https://uxlmtxq0vb.execute-api.us-east-1.amazonaws.com/test/last-bg-reading">Demo</a><p>
 							</div>
 
 							
