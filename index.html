@@ -196,30 +196,47 @@
 								<h2>Blood Glucose Stats</h2>
 							</header>
 
-							<div id="BG-Data"></div>
+							<div id="BG-Data">
+								<div id="sgv"></div>
+								<div id="trend"></div>
+								<div id="date-String"></div>
+							</div>
 
 							<div class="row">
-								<div class="donut">
-									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-										 width="340px" height="333px" viewBox="0 0 340 333" enable-background="new 0 0 340 333" xml:space="preserve">
+								<div class = "containter 4u">
+									<div class="donut">
+										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+											 width="340px" height="333px" viewBox="0 0 340 333" enable-background="new 0 0 340 333" xml:space="preserve">
 
-									  <defs>
-									      <linearGradient id="quotaDonut__gradient">
-									        <stop stop-color="#fc0023" offset="0%"></stop>
-									        <stop stop-color="#f50" class="quotaDonut__gradientStopEnd" offset="100%"></stop>
-									      </linearGradient>
-									    </defs>
+										  <defs>
+										      <linearGradient id="quotaDonut__gradient">
+										        <stop stop-color="#fc0023" offset="0%"></stop>
+										        <stop stop-color="#f50" class="quotaDonut__gradientStopEnd" offset="100%"></stop>
+										      </linearGradient>
+										    </defs>
 
-									  <g transform="translate(115, 115)">
-									    <circle r="100" class="circle-back" />
-									    <circle r="115" class="circle-border" />
-									    <circle r="85"  class="circle-border" />
-									    <!-- <circle r="100" class="circle-front" transform="rotate(270.1)" /> -->
-											<circle r="100" class="circle-front" transform="rotate(180.1)" />
-									  </g>
-									</svg>
+										  <g transform="translate(115, 115)">
+										    <circle r="100" class="circle-back" />
+										    <circle r="115" class="circle-border" />
+										    <circle r="85"  class="circle-border" />
+										    <!-- <circle r="100" class="circle-front" transform="rotate(270.1)" /> -->
+											<circle r="100" class="circle-front" transform="rotate(135.1)" />
+										  </g>
+										</svg>
+									</div>
+								</div> <!--End Container -->
+
+								<div class = "containter 4u">
+									<div id="BGText">
+										<p class="8u">Loading Blood Glucose Data...</p>
+									</div>
+									<div id="BGTrendText">
+										<p class="8u">Loading Blood Glucose Trend Data...</p>
+									</div>
 								</div>
 							</div>
+
+
 							<!-- <div class="row">
 								<div class = "containter 4u">
 									<img src="images/blood-drop.png" class="image fit centered"></img>
