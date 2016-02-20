@@ -62,7 +62,7 @@ $(document).ready(function(){
     // // insert script to document and load content
     // document.body.appendChild(script);
 
-    $.get("https://uxlmtxq0vb.execute-api.us-east-1.amazonaws.com/test/last-bg-reading", function(data) {
+    $.getJSON("https://uxlmtxq0vb.execute-api.us-east-1.amazonaws.com/test/last-bg-reading", function(data) {
         // Get the element with id summary and set the inner text to the result.
         $('#BG-Data').text(data);
         console.log(data);
