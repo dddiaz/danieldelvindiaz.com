@@ -39,7 +39,7 @@ $(document).ready(function(){
     var _showBGTrend = function(trend,direction){
         var dir = _getDirection(direction)
         if (trend){ //bg is not null or empty
-            $('#BGTrendText').text("Currently my Blood Glucose is trending"
+            $('#BGTrendText').text("Currently my Blood Glucose is trending "
                 + dir + " by " + trend + " points");
         }
     }
