@@ -196,17 +196,13 @@
 								<h2>Blood Glucose Stats</h2>
 							</header>
 
-							<div class="">
-								<div id="BGDescription">
-									<p>Using AWS Lambda and API Gateway, I am able to retrive real time data regarding my current glucose reading using a custom API I made. I hope to develop analytics and insights into my glucose readings to help Type I Diabetics better manage thier Diabetes.</p>
-								</div>
-							</div>
+
 
 							<div id="bg-donut" class="row">
-								<div class = "4u">
+								<div class = "6u">
 									<div class="donut">
 										<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											 width="340px" height="333px" viewBox="0 0 340 333" enable-background="new 0 0 340 333" xml:space="preserve">
+											 width="340px" height="333px" viewBox="0 0 230 230" enable-background="new 0 0 340 333" xml:space="preserve">
 
 										  <defs>
 										      <linearGradient id="quotaDonut__gradient">
@@ -222,18 +218,30 @@
 										    <!-- <circle r="100" class="circle-front" transform="rotate(270.1)" /> -->
 											<circle r="100" class="circle-front" transform="rotate(135.1)" />
 										  </g>
-										</svg>
+										  <g id="svg_1">
+											  <path d="m117.5772,63.18713c-0.92796,-1.31666 -2.43543,-2.10089 -4.03533,-2.10089c-1.60345,0 -3.10736,0.78064 -4.04243,2.10089c-9.98341,14.09833 -34.99531,51.18062 -34.99531,68.64616c0,21.81479 17.47455,39.49977 39.03418,39.49977c21.56319,0 39.04128,-17.68497 39.04128,-39.49977c0.00356,-17.46554 -25.019,-54.54783 -35.00241,-68.64616l0.00002,0l-0.00002,0l0.00002,0zm-17.74477,91.00416c-1.06659,1.28429 -2.60251,1.94983 -4.14908,1.94983c-1.2266,0 -2.47098,-0.42451 -3.4878,-1.2879c-15.39111,-13.11623 -10.07942,-32.48837 -9.84476,-33.31219c0.83194,-2.91031 3.81488,-4.57951 6.70538,-3.7485c2.87273,0.83102 4.52951,3.86726 3.71534,6.76678c-0.1671,0.62953 -3.49136,13.46517 6.41384,21.90472c2.28253,1.94981 2.57763,5.40695 0.64706,7.72728l0.00001,0zm10.65538,10.89661c-3.17492,0 -5.75966,-2.6153 -5.75966,-5.82782c0,-3.22331 2.58475,-5.83144 5.75966,-5.83144c3.18561,0 5.75967,2.61172 5.75967,5.83144c0,3.2197 -2.57761,5.82782 -5.75967,5.82782z" fill="#fc0023"/>
+										  </g>
+									  	</svg>
+									</div>
+
+									<div id="BGText">
+										<p>Loading Blood Glucose Data...</p>
+									</div>
+
+							    </div>
+								<div class="5u">
+									<div id="BGDescription">
+										<p>Using AWS Lambda and API Gateway, I am able to retrive real time data regarding my current glucose reading using a custom API I made. I hope to develop analytics and insights into my glucose readings to help Type I Diabetics better manage thier Diabetes. I query glucose information from a MongoDB that is updated every 5 minutes through an open source project called Night Scout.</p>
 									</div>
 								</div>
 
-								<div class="6u">
+								<div class="5u">
 									<!-- <div id="BGText">
 										<p>Loading Blood Glucose Data...</p>
-									</div>
-								</br>
+									</div> -->
 									<div>
 										<a href="https://github.com/dddiaz/BG-Stats-API" class="button scrolly">Check Out The Project On Github!</a>
-									</div> -->
+									</div>
 								</div>
 
 							</div>

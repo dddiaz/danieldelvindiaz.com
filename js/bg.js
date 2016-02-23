@@ -1,6 +1,5 @@
 $(document).ready(function(){
-    //console.log("Testing");
-    //RETURN for testing
+    //RETURN to disable too many aws calls during testing. Im on a budget here! haha
     //return;
 
     $.getJSON("https://uxlmtxq0vb.execute-api.us-east-1.amazonaws.com/test/last-bg-reading", function(data) {
