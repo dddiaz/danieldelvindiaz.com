@@ -785,6 +785,12 @@
 				background-color: #e8edec;
 			}
 
+			#main > section.bgPanel
+			{
+				background-color: #f5fafa;
+				/*background-image: url('../images/header-bg-compressed.jpg');*/
+			}
+
 /*********************************************************************************/
 /* Donut                                                                  */
 /*********************************************************************************/
