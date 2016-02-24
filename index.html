@@ -121,10 +121,22 @@
 								UCI Club Sailing Team, Taking Photos, Scuba Diving, or
 								Volunteering with JDRF.</p>
 
-							<footer>
+							<footer id="large-screen-button-footer">
 								<a href="resume/resumeDiaz.pdf" class="button scrolly">Resume</a>
 								<a href="http://www.linkedin.com/pub/daniel-diaz/55/841/3a7" class="button scrolly">View My LinkedIn Profile</a>
 							</footer>
+
+							<div id="small-screen-button-footer">
+								<div style="padding-bottom:25px;">
+									<a href="resume/resumeDiaz.pdf" class="button scrolly">Resume</a>
+								</div>
+								<div>
+									<a href="http://www.linkedin.com/pub/daniel-diaz/55/841/3a7" class="button scrolly">View My LinkedIn Profile</a>
+								</div>
+							</div>
+
+							<!-- <div class="4u" style="padding-bottom:20px;"><a href="resume/resumeDiaz.pdf" class="button scrolly">Resume</a></div>
+							<div class="4u" style="padding-bottom:20px;"><a href="http://www.linkedin.com/pub/daniel-diaz/55/841/3a7" class="button scrolly">View My LinkedIn Profile</a></div> -->
 
 						</div>
 					</section>
@@ -237,25 +249,12 @@
 								</div>
 
 								<div class="5u">
-									<!-- <div id="BGText">
-										<p>Loading Blood Glucose Data...</p>
-									</div> -->
 									<div>
 										<a href="https://github.com/dddiaz/BG-Stats-API" class="button scrolly">Check Out The Project On Github!</a>
 									</div>
 								</div>
 
 							</div>
-
-							<!-- <div class="row">
-								<div class = "containter 4u">
-									<img src="images/blood-drop.png" class="image fit centered"></img>
-								</div>
-								<p class="8u">BG-Stats is a series of APIs hosted on AWS Lambda and API Gateway that allow for a "Serverless Backend" that can serve stats about my Blood Glucose. Written with Node, I leveraged AWS Lambda so that my api can scale easily, be developed quickly, and require no server administration.</p>
-								<p class="8u">Blood Glucose is a measurement used by Type 1 Diabetics to determine the amount of glucose in the blood, and it helps indicate certain treatment options. With these stats, I am hoping to give myself and others extra insight into their Blood Glucose Readings.</p>
-								<p class="12u">To find out more information about this project, check out the <a class="" href="https://github.com/dddiaz/BG-Stats-API">BG Stats API Github</a>.</p>
-								<p class= "12u"><a class="button" href="https://uxlmtxq0vb.execute-api.us-east-1.amazonaws.com/test/last-bg-reading">Demo</a><p>
-							</div> -->
 
 						</div>
 					</section>
@@ -268,19 +267,48 @@
 								<h2>Contact</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/sailing-compressed.jpg" alt="" /></a>
+							<!-- <form action="//formspree.io/daniel.delvin.diaz@gmail.com"
+							      method="POST">
+							    <input type="text" name="name">
+							    <input type="email" name="_replyto">
+							    <input type="submit" value="Send">
+							</form> -->
 
-							<!--<p>Enough About Me. Let's Hear About You!</p>-->
+
+
+							<a href="#" class="image fit"><img src="images/sailing-compressed.jpg" alt="" /></a>
+
+							</br>
 							<p>Let's work together to accomplish something great!</p>
 
+							<form method="post" action="//formspree.io/daniel.delvin.diaz@gmail.com">
+								<div class="row">
+									<div class="6u" style="padding-bottom:20px;"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u" style="padding-bottom:20px;"><input type="text" name="email" placeholder="Email" /></div>
+									<input type="text" name="_gotcha" style="display:none" />
+									<div class="12u"  style="padding-bottom:20px;">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u">
+										<!-- <input type="submit" value="Send Message" /> -->
+										<input class="submit" type="submit" value="Send Message">
+									</div>
+								</div>
+							</form>
 
-							<form method="post" action="MAILTO:daniel.delvin.diaz@gmail.com">
+							<!-- <a href="#" class="image featured"><img src="images/sailing-compressed.jpg" alt="" /></a> -->
+
+							<!--<p>Enough About Me. Let's Hear About You!</p>-->
+							<!-- <p>Let's work together to accomplish something great!</p> -->
+
+
+							<!-- <form method="post" action="MAILTO:daniel.delvin.diaz@gmail.com">
 								<div class="row">
 									<div class="12u">
 										<input type="submit" value="Send Message" />
 									</div>
 								</div>
-							</form>
+							</form> -->
 
 						</div>
 					</section>

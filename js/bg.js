@@ -1,7 +1,12 @@
-$(document).ready(function(){
-    //RETURN to disable too many aws calls during testing. Im on a budget here! haha
-    //return;
+//BG Panel JS Logic
+//By: Daniel Diaz 2016
 
+$(document).ready(function(){
+    setTimeout(function() {
+      $('.donut').addClass('three-quarter-filled');
+    }, 500);
+    //RETURN to disable too many aws calls during testing. Im on a budget here! haha
+    return;
     $.getJSON("https://uxlmtxq0vb.execute-api.us-east-1.amazonaws.com/test/last-bg-reading", function(data) {
         var bg = data['sgv'];
         var trend = data['trend'];
@@ -12,14 +17,12 @@ $(document).ready(function(){
         //Once Data is loaded, attatch an inview event to the donut
         _setBGInfoText(bg,trend,direction);
         $('.donut').bind('inview', function(event, visible) {
-          if (visible) {
-              _adjustBGInfoDonut(returnBG());
-          } else {
-              _adjustBGInfoDonutToMin();
-          }
+            if (visible) {
+                _adjustBGInfoDonut(returnBG());
+            } else {
+                _adjustBGInfoDonutToMin();
+            }
         });
-        _adjustBGInfoDonut(bg);
-        //$('#bg-donut').css("background-image","url('images/sailing-compressed.jpg')");
     });
 
     //Function to adjust donut
