@@ -6,7 +6,18 @@ $(document).ready(function(){
         var bg = data['sgv'];
         var trend = data['trend'];
         var direction = data['direction'];
+        var returnBG = function() {
+            return bg;
+        }
+        //Once Data is loaded, attatch an inview event to the donut
         _setBGInfoText(bg,trend,direction);
+        $('.donut').bind('inview', function(event, visible) {
+          if (visible) {
+              _adjustBGInfoDonut(returnBG());
+          } else {
+              _adjustBGInfoDonutToMin();
+          }
+        });
         _adjustBGInfoDonut(bg);
         //$('#bg-donut').css("background-image","url('images/sailing-compressed.jpg')");
     });
@@ -15,14 +26,22 @@ $(document).ready(function(){
     var _adjustBGInfoDonut = function(bg){
       if (bg){ //bg is not null or empty
         if (bg < 80){
-          $('.donut').addClass('one-quarter-filled');
+          //$('.donut').addClass('one-quarter-filled');
+          $('.donut').attr("class","donut one-quarter-filled");
         } else if ( bg > 180){
-          $('.donut').addClass('three-quarter-filled');
+            //$('.donut').removeClass('almost-empty');
+          //$('.donut').addClass('three-quarter-filled');
+          $('.donut').attr("class","donut three-quarter-filled");
         } else {
           //Normal
-          $('.donut').addClass('half-filled');
+          //$('.donut').addClass('half-filled');
+          $('.donut').attr("class","donut half-filled");
         }
       }
+    }
+
+    var _adjustBGInfoDonutToMin = function(){
+        $('.donut').attr("class","donut almost-empty");
     }
 
     var _setBGInfoText = function(bg,trend,direction){

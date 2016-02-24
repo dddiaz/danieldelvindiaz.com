@@ -838,3 +838,7 @@ circle {
    /* 628 * (1 - 0.66667) */
   stroke-dashoffset: 314px;
 }
+
+.donut.almost-empty .circle-front {
+  stroke-dashoffset: 600px;
+}
