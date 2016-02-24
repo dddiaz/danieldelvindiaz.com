@@ -3,11 +3,11 @@
 
 $(document).ready(function(){
     setTimeout(function() {
-      $('.donut').addClass('three-quarter-filled');
+      $('.donut').addClass('almost-empty');
     }, 500);
     //RETURN to disable too many aws calls during testing. Im on a budget here! haha
     //return;
-    
+
     $.getJSON("https://uxlmtxq0vb.execute-api.us-east-1.amazonaws.com/test/last-bg-reading", function(data) {
         var bg = data['sgv'];
         var trend = data['trend'];
