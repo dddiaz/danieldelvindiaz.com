@@ -777,7 +777,8 @@
 
 			#main > section.three
 			{
-				background-color: #ecf1f1;
+				/*background-color: #ecf1f1;*/
+				background-color: #f5fafa;
 			}
 
 			#main > section.four
@@ -787,7 +788,8 @@
 
 			#main > section.bgPanel
 			{
-				background-color: #f5fafa;
+				background-color: #ecf1f1;
+				/*background-color: #f5fafa;*/
 				/*background-image: url('../images/header-bg-compressed.jpg');*/
 			}
 
