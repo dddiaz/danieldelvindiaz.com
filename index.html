@@ -40,7 +40,7 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/dddiaz-icon.jpg" alt="" /></span>
+							<span class="image avatar48"><img src="images/dddiaz-icon.jpg" alt="Me" /></span>
 							<h1 id="title">Daniel Diaz</h1>
 							<p>Software Engineer</p>
 						</div>
@@ -175,24 +175,31 @@
 									  	</svg>
 									</div>
 
-									<div id="BGText">
+									<!-- <div id="BGText">
 										<p>Loading Blood Glucose Data...</p>
-									</div>
+									</div> -->
 
 							    </div>
 								<div class="5u">
+									<div id="BGText" style="font-weight: bolder;font-size: larger;">
+										<p>Loading Blood Glucose Data...</p>
+									</div>
 									<div id="BGDescription">
-										<p>Using AWS Lambda and API Gateway, I am able to retrive real time data regarding my current glucose reading using a custom API I made. I hope to develop analytics and insights into my glucose readings to help Type I Diabetics better manage their Diabetes. I query glucose information from a MongoDB that is updated every 5 minutes through an open source project called Night Scout.</p>
+										<p>Using AWS Lambda and API Gateway, I am able to retrive real time data regarding my current glucose reading. I hope to develop analytics and insights into my glucose readings to help Type I Diabetics better manage their Diabetes. I query glucose information using an API written in NodeJS from a MongoDB that is updated every 5 minutes. The API runs on AWS Lambda, spinning up only when needed.</p>
 									</div>
 								</div>
 
-								<div class="5u">
+								<!-- <div class="5u">
 									<div>
 										<a href="https://github.com/dddiaz/BG-Stats-API" class="button scrolly">Check Out The Project On Github!</a>
 									</div>
-								</div>
+								</div> -->
 
 							</div>
+
+							<footer>
+								<a href="https://github.com/dddiaz/BG-Stats-API" class="button scrolly">Check Out The Project On Github!</a>
+							</footer>
 
 						</div>
 					</section>

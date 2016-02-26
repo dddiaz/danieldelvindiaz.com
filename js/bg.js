@@ -12,6 +12,7 @@ $(document).ready(function(){
         var bg = data['sgv'];
         var trend = data['trend'];
         var direction = data['direction'];
+        //console.log("BG: " + bg);
         var returnBG = function() {
             return bg;
         }
