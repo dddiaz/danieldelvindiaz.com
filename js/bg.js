@@ -72,12 +72,12 @@ $(document).ready(function(){
         }
         if (bg){ //bg is not null or empty
           if (bg < 80){
-              bgText = "Currently my Blood Glucose is below average";
+              bgText = "Currently my blood glucose is below average";
           } else if ( bg > 180){
-              bgText = "Currently my Blood Glucose is above average";
+              bgText = "Currently my blood glucose is above average";
           } else {
             //Normal
-            bgText = "Currently my Blood Glucose is average";
+            bgText = "Currently my blood glucose is average";
           }
         }
 
