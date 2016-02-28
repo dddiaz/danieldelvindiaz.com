@@ -18,7 +18,7 @@ $(function(){
                 $contactForm.append('<div class="">Message sent! I will get back to you shortly!</div>');
             },
             error: function(err) {
-                $contactForm.append('<div class=""> Dang it, there was an error. Please try again.</div>');
+                $contactForm.append('<div class=""> Dang it, there was an error. Make sure you filled out the fields and please try again.</div>');
             }
         });
     });
