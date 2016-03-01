@@ -2,7 +2,7 @@
 $(function(){
     //Formspree Setup
     var $contactForm = $('#contact-form');
-    $contactForm.submit(function(e) {
+    $contactForm.click(function(e) {
         e.preventDefault();
         $.ajax({
             url: '//formspree.io/daniel.delvin.diaz@gmail.com',
