@@ -3,7 +3,10 @@ danieldelvindiaz.com
 
 My personal Website
 
-Hosted on AWS S3. 
+To Run Locally:
+python -m SimpleHTTPServer
+
+Hosted on AWS S3.
 Uses AWS Lambda and API Gateway for Glucose API.
 
 Theme By:
