@@ -312,6 +312,25 @@
 				margin-bottom: 0.5em;
 			}
 
+			form input[type="submit"]
+			{
+				text-decoration: none;
+				color: inherit;
+				border-bottom: dotted 1px rgba(128,128,128,0.5);
+				-moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+				-webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+				-o-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+				-ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+				transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
+				outline: 0;
+			}
+
+				form input[type="submit"]:hover
+				{
+					color: #E27689;
+					border-bottom-color: rgba(255,255,255,0);
+				}
+
 			form input[type="text"],
 			form input[type="email"],
 			form input[type="password"],
