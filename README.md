@@ -3,6 +3,11 @@ danieldelvindiaz.com
 
 My personal Website
 
+Built with Serverless
+
+Notes:
+- Make sure to change user (aws credentials) before deploying
+
 To Run Locally:
 python -m SimpleHTTPServer
 
